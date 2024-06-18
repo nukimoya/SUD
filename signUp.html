@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/signUp.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light navbar_colour">
+    <a class="navbar-brand navbar_padding" href="#"><img style="width: auto; height: 40px; padding-top: 5px;" src="images/Sud Logo.png" alt="Logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item navbar_padding">
+          <a class="nav-link" style="color: black;" href="#">Medication</a>
+        </li>
+        <li class="nav-item navbar_padding">
+          <a class="nav-link" style="color: black;" href="sales.html">Sales</a>
+        </li>
+        <li class="nav-item navbar_padding">
+          <a class="nav-link" style="color: black;" href="#">Prescription</a>
+        </li> 
+        <li class="nav-item navbar_padding">
+            <a class="nav-link" style="color: black;" href="customer.html">Customer</a>
+          </li>   
+      </ul>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item navbar_padding">
+            <a class="nav-link" style="color: black;" href="#">Logout</a>
+          </li>  
+        </ul>
+    </div>  
+  </nav>
+
+      <div class="container row">
+        <div class="signup-container col-md-5">
+          <form action="process_login.php" method="POST">
+            <h2 class="text-center mb-4">Register</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control sign_up_form" id="username" name="usernmae" placeholder="Enter a username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control sign_up_form" id="email" name="email" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control sign_up_form" id="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Confirm Password</label>
+                <input type="password" class="form-control sign_up_form" id="password" name="password" placeholder="Confirm Password" required>
+            </div>
+            <button type="submit" class="btn signup_button btn-block">Register</button>
+            <div class="text-center mt-2">
+                <a class="login_text text-center" href="login.html">Login</a>
+            </div>       
+        </form>    
+        </div>
+    </div>
+    <div>
+
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
